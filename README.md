@@ -5,7 +5,7 @@
 1. Creational patterns
 - [X] [Abstract Factory](./creational-patterns/abstract-factory)
 - [X] [Builder](./creational-patterns/builder)
-- [ ] Factory Method
+- [X] [Factory Method](./creational-patterns/factory-method)
 - [ ] Prototype
 - [ ] Singleton
 2. Structural patterns

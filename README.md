@@ -12,7 +12,7 @@
 - [ ] Adapter
 - [ ] Bridge
 - [ ] Composite
-- [ ] Decorator
+- [X] [Decorator](./structural-patterns/decorator)
 - [ ] Facade
 - [ ] Flyweight
 - [ ] Proxy

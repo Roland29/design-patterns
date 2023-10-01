@@ -22,7 +22,7 @@
 - [ ] Memento
 - [ ] State
 - [ ] Template Method
-- [ ] Command
+- [X] [Command](./behavioral-patterns/command)
 - [ ] Mediator
 - [ ] Observer
 - [ ] Strategy

@@ -3,7 +3,7 @@
 ## The Catalog of Design Patterns
 
 1. Creational patterns
-- [ ] Abstract Factory
+- [X] [Abstract Factory](./creational-patterns/abstract-factory)
 - [ ] Builder
 - [ ] Factory Method
 - [ ] Prototype

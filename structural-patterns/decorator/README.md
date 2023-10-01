@@ -4,4 +4,4 @@
 
 Complexity: :star::star::heavy_minus_sign:
 
-Popularity: :star::star::minus_sign:
+Popularity: :star::star::heavy_minus_sign:

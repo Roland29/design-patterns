@@ -6,7 +6,7 @@
 - [X] [Abstract Factory](./creational-patterns/abstract-factory)
 - [X] [Builder](./creational-patterns/builder)
 - [X] [Factory Method](./creational-patterns/factory-method)
-- [ ] Prototype
+- [X] [Prototype](./creational-patterns/prototype)
 - [ ] Singleton
 2. Structural patterns
 - [ ] Adapter

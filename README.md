@@ -13,7 +13,7 @@
 - [X] [Bridge](./structural-patterns/bridge)
 - [X] [Composite](./structural-patterns/composite)
 - [X] [Decorator](./structural-patterns/decorator)
-- [ ] Facade
+- [X] [Facade](./structural-patterns/facade)
 - [ ] Flyweight
 - [ ] Proxy
 3. Behavioral patterns

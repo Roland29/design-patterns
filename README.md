@@ -15,7 +15,7 @@
 - [X] [Decorator](./structural-patterns/decorator)
 - [X] [Facade](./structural-patterns/facade)
 - [X] [Flyweight](./structural-patterns/flyweight)
-- [ ] Proxy
+- [X] [Proxy](./structural-patterns/proxy)
 3. Behavioral patterns
 - [ ] Chain of Responsibility
 - [ ] Iterator

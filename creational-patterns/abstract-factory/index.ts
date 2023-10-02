@@ -7,9 +7,9 @@
  * another.
  */
 interface AbstractGUIFactory {
-    createButton(): AbstractButton;
+  createButton(): AbstractButton;
 
-    createCheckbox(): AbstractCheckbox;
+  createCheckbox(): AbstractCheckbox;
 }
 
 /**
@@ -19,26 +19,26 @@ interface AbstractGUIFactory {
  * while inside the method a concrete product is instantiated.
  */
 class MacFactory implements AbstractGUIFactory {
-    public createButton(): AbstractButton {
-        return new ConcreteMacButton();
-    }
+  public createButton(): AbstractButton {
+    return new ConcreteMacButton();
+  }
 
-    public createCheckbox(): AbstractCheckbox {
-        return new ConcreteMacCheckbox();
-    }
+  public createCheckbox(): AbstractCheckbox {
+    return new ConcreteMacCheckbox();
+  }
 }
 
 /**
  * Each Concrete Factory has a corresponding product variant.
  */
 class WindowsFactory implements AbstractGUIFactory {
-    public createButton(): AbstractButton {
-        return new ConcreteWindowsButton();
-    }
+  public createButton(): AbstractButton {
+    return new ConcreteWindowsButton();
+  }
 
-    public createCheckbox(): AbstractCheckbox {
-        return new ConcreteWindowsCheckbox();
-    }
+  public createCheckbox(): AbstractCheckbox {
+    return new ConcreteWindowsCheckbox();
+  }
 }
 
 /**
@@ -46,22 +46,22 @@ class WindowsFactory implements AbstractGUIFactory {
  * variants of the product must implement this interface.
  */
 interface AbstractButton {
-    usefulFunctionButton(): string;
+  usefulFunctionButton(): string;
 }
 
 /**
  * These Concrete Products are created by corresponding Concrete Factories.
  */
 class ConcreteMacButton implements AbstractButton {
-    public usefulFunctionButton(): string {
-        return 'The result of the button from mac.';
-    }
+  public usefulFunctionButton(): string {
+    return 'The result of the button from mac.';
+  }
 }
 
 class ConcreteWindowsButton implements AbstractButton {
-    public usefulFunctionButton(): string {
-        return 'The result of the button from windows.';
-    }
+  public usefulFunctionButton(): string {
+    return 'The result of the button from windows.';
+  }
 }
 
 /**
@@ -70,55 +70,53 @@ class ConcreteWindowsButton implements AbstractButton {
  * the same concrete variant.
  */
 interface AbstractCheckbox {
-    /**
-     * Product B is able to do its own thing...
-     */
-    usefulFunctionCheckbox(): string;
+  /**
+   * Product B is able to do its own thing...
+   */
+  usefulFunctionCheckbox(): string;
 
-    /**
-     * ...but it also can collaborate with the ProductA.
-     *
-     * The Abstract Factory makes sure that all products it creates are of the
-     * same variant and thus, compatible.
-     */
-    anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string;
+  /**
+   * ...but it also can collaborate with the ProductA.
+   *
+   * The Abstract Factory makes sure that all products it creates are of the
+   * same variant and thus, compatible.
+   */
+  anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string;
 }
 
 /**
  * These Concrete Products are created by corresponding Concrete Factories.
  */
 class ConcreteMacCheckbox implements AbstractCheckbox {
+  public usefulFunctionCheckbox(): string {
+    return 'The result of the mac checkbox.';
+  }
 
-    public usefulFunctionCheckbox(): string {
-        return 'The result of the mac checkbox.';
-    }
-
-    /**
-     * The variant, Product B1, is only able to work correctly with the variant,
-     * Product A1. Nevertheless, it accepts any instance of AbstractProductA as
-     * an argument.
-     */
-    public anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string {
-        const result = collaborator.usefulFunctionButton();
-        return `The result of the Mac Checkbox collaborating with the (${result})`;
-    }
+  /**
+   * The variant, Product B1, is only able to work correctly with the variant,
+   * Product A1. Nevertheless, it accepts any instance of AbstractProductA as
+   * an argument.
+   */
+  public anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string {
+    const result = collaborator.usefulFunctionButton();
+    return `The result of the Mac Checkbox collaborating with the (${result})`;
+  }
 }
 
 class ConcreteWindowsCheckbox implements AbstractCheckbox {
+  public usefulFunctionCheckbox(): string {
+    return 'The result of the windows checkbox.';
+  }
 
-    public usefulFunctionCheckbox(): string {
-        return 'The result of the windows checkbox.';
-    }
-
-    /**
-     * The variant, Product B2, is only able to work correctly with the variant,
-     * Product A2. Nevertheless, it accepts any instance of AbstractProductA as
-     * an argument.
-     */
-    public anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string {
-        const result = collaborator.usefulFunctionButton();
-        return `The result of the Windows Checkbox collaborating with the (${result})`;
-    }
+  /**
+   * The variant, Product B2, is only able to work correctly with the variant,
+   * Product A2. Nevertheless, it accepts any instance of AbstractProductA as
+   * an argument.
+   */
+  public anotherUsefulFunctionCheckbox(collaborator: AbstractButton): string {
+    const result = collaborator.usefulFunctionButton();
+    return `The result of the Windows Checkbox collaborating with the (${result})`;
+  }
 }
 
 /**
@@ -126,12 +124,13 @@ class ConcreteWindowsCheckbox implements AbstractCheckbox {
  * types: AbstractFactory and AbstractProduct. This lets you pass any factory or
  * product subclass to the client code without breaking it.
  */
+// @ts-ignore
 function clientCode(factory: AbstractGUIFactory) {
-    const productA = factory.createButton();
-    const productB = factory.createCheckbox();
+  const productA = factory.createButton();
+  const productB = factory.createCheckbox();
 
-    console.log(productB.usefulFunctionCheckbox());
-    console.log(productB.anotherUsefulFunctionCheckbox(productA));
+  console.log(productB.usefulFunctionCheckbox());
+  console.log(productB.anotherUsefulFunctionCheckbox(productA));
 }
 
 /**
@@ -142,5 +141,7 @@ clientCode(new MacFactory());
 
 console.log('');
 
-console.log('Client: Testing the same client code with the second factory type...');
+console.log(
+  'Client: Testing the same client code with the second factory type...'
+);
 clientCode(new WindowsFactory());

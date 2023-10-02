@@ -9,7 +9,7 @@
 - [X] [Prototype](./creational-patterns/prototype)
 - [X] [Singleton](./creational-patterns/singleton)
 2. Structural patterns
-- [ ] Adapter
+- [X] [Adapter](./structural-patterns/adapter)
 - [ ] Bridge
 - [ ] Composite
 - [X] [Decorator](./structural-patterns/decorator)

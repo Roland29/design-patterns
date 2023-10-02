@@ -7,7 +7,7 @@
 - [X] [Builder](./creational-patterns/builder)
 - [X] [Factory Method](./creational-patterns/factory-method)
 - [X] [Prototype](./creational-patterns/prototype)
-- [ ] Singleton
+- [X] [Singleton](./creational-patterns/singleton)
 2. Structural patterns
 - [ ] Adapter
 - [ ] Bridge

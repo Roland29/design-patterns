@@ -14,7 +14,7 @@
 - [X] [Composite](./structural-patterns/composite)
 - [X] [Decorator](./structural-patterns/decorator)
 - [X] [Facade](./structural-patterns/facade)
-- [ ] Flyweight
+- [X] [Flyweight](./structural-patterns/flyweight)
 - [ ] Proxy
 3. Behavioral patterns
 - [ ] Chain of Responsibility

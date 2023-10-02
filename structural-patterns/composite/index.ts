@@ -116,9 +116,9 @@ function clientCode(component: Component) {
 /**
  * This way the client code can support the simple leaf components...
  */
-const simple = new Leaf();
+const leaf = new Leaf();
 console.log("Client: I've got a simple component:");
-clientCode(simple);
+clientCode(leaf);
 console.log('');
 
 /**
@@ -155,4 +155,4 @@ function clientCode2(component1: Component, component2: Component) {
 console.log(
   "Client: I don't need to check the components classes even when managing the tree:"
 );
-clientCode2(tree, simple);
+clientCode2(tree, leaf);

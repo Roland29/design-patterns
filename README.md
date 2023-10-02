@@ -11,7 +11,7 @@
 2. Structural patterns
 - [X] [Adapter](./structural-patterns/adapter)
 - [X] [Bridge](./structural-patterns/bridge)
-- [ ] Composite
+- [X] [Composite](./structural-patterns/composite)
 - [X] [Decorator](./structural-patterns/decorator)
 - [ ] Facade
 - [ ] Flyweight

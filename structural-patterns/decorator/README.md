@@ -5,3 +5,5 @@
 Complexity: :star::star::heavy_minus_sign:
 
 Popularity: :star::star::heavy_minus_sign:
+
+![Pseudo code Decorator](../../images/decorator.png)

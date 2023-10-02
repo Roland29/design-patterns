@@ -5,3 +5,5 @@
 Complexity: :star::heavy_minus_sign::heavy_minus_sign:
 
 Popularity: :star::star::star:
+
+![Pseudo code Factory method](../../images/factoryMethod.png)

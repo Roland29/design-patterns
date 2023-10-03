@@ -18,7 +18,7 @@
 - [X] [Proxy](./structural-patterns/proxy)
 3. Behavioral patterns
 - [X] [Chain of Responsibility](./behavioral-patterns/chain-of-responsibility)
-- [ ] Iterator
+- [X] [Iterator](./behavioral-patterns/iterator)
 - [ ] Memento
 - [ ] State
 - [ ] Template Method

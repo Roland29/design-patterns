@@ -19,8 +19,8 @@
 3. Behavioral patterns
 - [X] [Chain of Responsibility](./behavioral-patterns/chain-of-responsibility)
 - [X] [Iterator](./behavioral-patterns/iterator)
-- [ ] Memento
-- [ ] State
+- [X] [Memento](./behavioral-patterns/memento)
+- [X] [State](./behavioral-patterns/state)
 - [ ] Template Method
 - [X] [Command](./behavioral-patterns/command)
 - [ ] Mediator

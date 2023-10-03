@@ -21,7 +21,7 @@
 - [X] [Iterator](./behavioral-patterns/iterator)
 - [X] [Memento](./behavioral-patterns/memento)
 - [X] [State](./behavioral-patterns/state)
-- [ ] Template Method
+- [X] [Template Method](./behavioral-patterns/template-method)
 - [X] [Command](./behavioral-patterns/command)
 - [ ] Mediator
 - [ ] Observer

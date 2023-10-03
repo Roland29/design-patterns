@@ -17,7 +17,7 @@
 - [X] [Flyweight](./structural-patterns/flyweight)
 - [X] [Proxy](./structural-patterns/proxy)
 3. Behavioral patterns
-- [ ] Chain of Responsibility
+- [X] [Chain of Responsibility](./behavioral-patterns/chain-of-responsibility)
 - [ ] Iterator
 - [ ] Memento
 - [ ] State

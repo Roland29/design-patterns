@@ -27,3 +27,9 @@
 - [X] [Observer](./behavioral-patterns/observer)
 - [X] [Strategy](./behavioral-patterns/strategy)
 - [X] [Visitor](./behavioral-patterns/visitor)
+4. Microservices
+- [] [Api gateway](./microservices/api-gateway)
+- [] [Circuit breaker](./microservices/circuit-breaker)
+- [] [CQRS](./microservices/cqrs)
+- [] [Event sourcing](./microservices/event-sourcing)
+- [] [Saga](./microservices/saga)

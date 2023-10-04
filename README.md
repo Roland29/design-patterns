@@ -23,7 +23,7 @@
 - [X] [State](./behavioral-patterns/state)
 - [X] [Template Method](./behavioral-patterns/template-method)
 - [X] [Command](./behavioral-patterns/command)
-- [ ] Mediator
-- [ ] Observer
+- [X] [Mediator](./behavioral-patterns/mediator)
+- [X] [Observer](./behavioral-patterns/observer)
 - [ ] Strategy
 - [ ] Visitor

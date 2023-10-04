@@ -26,4 +26,4 @@
 - [X] [Mediator](./behavioral-patterns/mediator)
 - [X] [Observer](./behavioral-patterns/observer)
 - [X] [Strategy](./behavioral-patterns/strategy)
-- [ ] Visitor
+- [X] [Visitor](./behavioral-patterns/visitor)
